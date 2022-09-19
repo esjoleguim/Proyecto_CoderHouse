@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.ico">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/937c9b5afc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Contáctanos</title>
+</head>
+<body>
+    <header class="header">
+        <!-- Navegador del sitio-->
+        <nav class="header_nav container">
+            <a href="../index.html"><img class="nav_logo" src="../assets/logo-2.png" alt="Este es logo de la empresa"></a>
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="../index.html" class="nav_link">Inicio</a></li>
+                    <li class="nav_item"><a href="../pages/tecnologias-servicios.html" class="nav_link">Tecnologías y Servicios</a></li>
+                    <li class="nav_item"><a href="../pages/casos-exito.html" class="nav_link">Casos de Éxito</a></li>
+                    <li class="nav_item"><a href="../pages/nosotros.html" class="nav_link">Nosotros</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link nav_link--contacto">Contáctanos</a></li>
+                </ul>
+                <figure class="nav_menu"><img src="../assets/icon_menu.svg" alt="Icono de menu" class="nav_icon"></figure>
+        </nav>
+        <!-- Seccion Contenido del Hero -->
+        <section class="hero_content container">
+            <div class="hero_texts">
+                <h1 class="hero_titulo">Lorem ipsum dolor sit amet.<span class="hero_titulo--textocolor">Lorem ipsum dolor sit amet.</span> Lorem, ipsum.</h1>
+                <p class="hero_subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, magnam?</p>
+            </div>
+        </section>
+
+        <!-- Background del Hero -->
+        <figure class="hero_image">
+            <img src="../assets/hero-contact.jpg" alt="" class="img_hero">
+            <div class="background_black"></div>
+        </figure>
+
+        <!-- Sidebar de redes sociales -->
+            <div class="rrss_sidearea">
+                <div class="rrss_caja">
+                    <a href="#" target="_blank" class="rrss_link">
+                        <box-icon name='facebook' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
+                    </a>
+                </div>
+                <div class="rrss_caja">
+                    <a href="#" target="_blank" class="rrss_link">
+                        <box-icon name='instagram' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
+                    </a>
+                </div>
+    
+                <div class="rrss_caja">
+                    <a href="#" target="_blank" class="rrss_link">
+                        <box-icon name='linkedin' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
+                    </a>
+                </div>
+            </div>
+
+    </header>
+    
+    <main class="Main">
+        <section class="contenido_contactanos container">
+            <section class="contactanos">
+                <h3 class="titulo">Hablemos</h3>
+                <p class="descripcion_formulario">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, expedita!</p>
+                <div class="whatsapp_contact">
+                    <i class="icon_wa"></i>
+                    <p class="tel_info">+56932073359</p>
+                </div>
+                <div class="email_contact">
+                    <i class="icon_email"></i>
+                    <p class="email_info">contact@bizapps.cl</p>
+                </div>
+                <div class="ubicacion">
+                    <i class="icon_ubicacion"></i>
+                    <p class="ubicacion_info">Av. Alvarez de toledo, San Miguel</p>
+                </div>
+            </section>
+            <section class="formulario_contacto">
+                <h3 class="titulo_form">Formulario de Contacto</h3>
+                <p class="descripcion_form">¿En qué podemos ayudarte?</p>
+                <div class="formulario_content">
+                    <div class="col-container">
+                        <div class="row">
+                            <div class="col">
+                                <label for="nombre" class="form-label">Nombres</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Escribe tus nombres.." class="form-control form-control-sm">
+                            </div>
+                            <div class="col">
+                                <label for="telefono" class="form-label">Telefono</label>
+                                <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu telefono.."  class="form-control form-control-sm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" name="correo" id="correo" placeholder="Escribe tu correo.."  class="form-control form-control-sm">
+
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto"  class="form-control form-control-sm">
+
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" class="form-control"></textarea>
+                    <button type="submit" value="enviar" class="boton">Enviar</button>
+                </div>
+            </section>
+    </section>
+
+        <section class="maps">
+            <h3 class="titulo container">Ubícanos en</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212999.19734108844!2d-70.76991292410793!3d-33.472422772071496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c44fdf6713bf%3A0x5501fecf7aef1121!2sMuseo%20de%20la%20Memoria%20y%20los%20Derechos%20Humanos!5e0!3m2!1ses!2scl!4v1662427633323!5m2!1ses!2scl" frameborder="0" class="iframe_maps"></iframe>
+
+        </section>
+    </main> 
+    
+    <footer class="footer">
+        <section class="secciones_footer_insignias">
+            <div class="seccion_insignias_items container">
+               <img src="../assets/badge_1.svg" alt="Insignia de certificacion" class="insignia_img">
+               <img src="../assets/badge_2.svg" alt="Insignia de certificacion" class="insignia_img">
+               <img src="../assets/badge_3.svg" alt="Insignia de certificacion" class="insignia_img"> 
+            </div>
+        </section>
+
+        <section class="secciones_footer_principal">
+                <div class="footer_pricipal_imagenes">
+                    <img src="../assets/logo-2.png" alt="" class="imagenes_footer">
+                    <img src="../assets/partner-logo.png" alt="" class="imagenes_footer">
+                </div>
+
+                <div class="footer_contact">
+                    <div class="contact_info">
+                        <i class="fa-solid fa-phone icon"></i>
+                        <p>+569876543</p>
+                    </div>
+                    <div class="contact_info">
+                        <i class="fa-regular fa-envelope icon"></i>
+                        <p>info@bizapps.cl</p>
+                    </div>
+                </div>
+
+                <nav class="nav_footer">
+                    <ul class="footer_list">
+                        <li class="menu_footer_item"><a class="footer_item_link" href="../index.html">Inicio</a></li>
+                        <li class="menu_footer_item"><a class="footer_item_link" href="../pages/tecnologias-servicios.html">Tecnologías y Servicios</a></li>
+                        <li class="menu_footer_item"><a class="footer_item_link" href="../pages/casos-exito.html">Casos de Éxito</a></li>
+                        <li class="menu_footer_item"><a class="footer_item_link" href="../pages/nosotros.html">Nosotros</a></li>
+                        <li class="menu_footer_item"><a class="footer_item_link" href="../pages/contacto.html">Contáctanos</a></li>
+                    </ul>
+                </nav>
+        </section>
+
+        <section class="secciones_footer_final">
+            <div class="final_footer">
+                <div class="text_copyright">
+                    <p> &copy - 2022 BizApps.cl Todos los derechos reservados - <a class="link_final" href="#">Política de Privacidad</a> - <a class="link_final" href="#"> Términos y Condiciones</a></p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800;900&family=Nunito:wght@300;400;600;700&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid: 1fr 2fr 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer" 
+    ;
+}
+
+.container{
+    width: 90%;
+    max-width:1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header */
+.header{
+    grid-area: header;
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas: 
+    "navegador"
+    "contenido";
+}
+
+/* Navegador */
+.header_nav{
+    grid-area: navegador;
+    height: 5em;
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    gap: 1em;
+    align-items: center;
+    height: 100px;
+}
+
+.nav_menu{
+    display: none;
+}
+
+.nav_icon{
+    width: 30px;
+}
+
+.nav_logo{
+    width: 150px;
+}
+
+.nav_list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_item{
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav_link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.nav_link:hover{
+    color: #DE39B2;
+}
+
+.nav_link--contacto{
+    padding: 10px;
+    background-color: #DE39B2;
+    border-radius: 20px;
+}
+.nav_link--contacto:hover{
+    background-color:rgba(255, 255, 255, 0.234);
+    color: #fff;
+}
+
+/* Contenido del Hero*/
+.hero_content{
+    grid-area: contenido;
+    display: flex;
+    align-items:center;
+}
+
+.img_hero{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top: 0px;
+    z-index: -1;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.background_black{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top: 0px;
+    z-index: -1;
+    background: #010f14;
+    opacity: 80%;
+}
+
+.hero_titulo{
+    color: #fff;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+}
+
+.hero_titulo--textocolor{
+    color:#DE39B2;
+    font-weight: 200px;
+}
+
+.hero_subtitulo{
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Sidebar de RRSS */
+
+.rrss_sidearea{
+    width: 150px;
+    position:fixed;
+    margin-top: 600px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%);
+}
+
+.rrss_caja{
+    background-color: #DE39B2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.rrss_caja:hover{
+    opacity: 0.5;
+}
+/* Main del Sitio*/
+.main{
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido_principal{
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas: 
+    "tecnologias"
+    "diferencias"
+    "clientes";
+    gap: 1em;
+}
+
+/* Grilla de Tecnologias */
+
+.grid_tecnologias{
+    grid-area: tecnologias;
+    padding: 60px;
+    display: grid;
+    grid-template-rows: repeat(2,max-content);
+    grid-template-areas: 
+    "primera_fila"
+    "segunda_fila"
+    ;
+    gap: 1em;
+}
+
+.titulo{
+    font-size: 2em;
+}
+
+.primera_fila_tecnologias{
+    grid-area: primera_fila;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px,1fr));
+    gap: 1em;
+}
+
+.segunda_fila_tecnologias{
+    grid-area: segunda_fila;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px,1fr));
+    gap: 1em;
+}
+
+.item_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    padding: 10px;
+}
+
+.tecnologia_img{
+    width: 50px;
+}
+
+.nombre_tecnologia{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #DE39B2;
+    margin: 15px;
+}
+.descripcion_tecnologia{
+    font-size: 1em;
+    color: #3a3a3a;
+}
+
+    /* Contenido que nos diferencia*/
+.diferencias{
+    grid-area: diferencias;
+}
+
+.grid_diferencias{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    ".  primera_diferencia. "
+    "segunda_diferencia .   tercera_diferencia"
+    ;
+    align-items: center;
+}
+
+.item{
+    padding: 3em;
+    box-shadow: 0 0 32px -16px rgba(0, 0, 0,.5);
+}
+
+.primera_diferencia{
+    grid-area: primera_diferencia;
+}
+
+.segunda_diferencia{
+    grid-area: segunda_diferencia;
+}
+
+.tercera_diferencia{
+    grid-area: tercera_diferencia;
+}
+.diferencia_content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.diferencia_img{
+    width: 250px;
+}
+
+.titulo_diferencia{
+    text-align: center;
+}
+
+.descripcion_diferencia{
+    text-align: center;
+}
+
+/* Contenido de clientes */
+.seccion_nuestros_clientes{
+    grid-area: clientes;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(16,16,16,.8),rgba(16,16,16,.8)),url(../assets/clientes_hero.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.titulo--nuestrosclientes{
+    color: #fff;
+    font-size: 2em;
+}
+
+.grilla_clientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo_cliente_img{
+    width: 150px;
+    margin: 50px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.logo_cliente_img:hover{
+    width: 170px;
+    transition: 0.5s;
+}
+
+.hero_clientes{
+    position: absolute;
+    z-index: -1;
+    width:100%;
+    height: 100%;
+}
+
+.img_hero_clientes{
+    width:100%;
+    height: 30px;
+    position: absolute;
+    left:0px;
+    top: 0px;
+    z-index: -1;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Página Casos de éxito */
+.imagen_caso_exito{
+    width: 100px;
+}
+
+/* Pagina Nosotros */
+
+.foto_persona{
+    width: 300px;
+}
+
+.descripcion_empresa_hero{
+    width: 100px;
+}
+
+/* Página Contactanos */
+
+.contenido_contactanos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "hablemos formulario"
+    ;
+    gap: 1em;
+}
+
+.contactanos{
+    grid-area: hablemos;
+}
+
+.formulario_contacto{
+    grid-area: formulario;
+}
+.boton{
+    background-color: #DE39B2;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.125rem;
+    border-radius: 15px;
+    border: none;
+}
+.iframe_maps{
+    width: 100%;
+    height: 30vh;
+}
+
+/*Footer*/
+
+.footer{
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+    display: block;
+    display: grid;
+    grid-template-rows: repeat(3,max-content);
+    grid-template-areas: 
+    "footer_insignias"
+    "footer_contenido"
+    "footer_final"
+    ;
+}
+    /* Footer-Seccion Insignias */
+.secciones_footer_insignias{
+    grid-area: footer_insignias;
+    background-color: #040404d3;
+}
+
+.seccion_insignias_items{
+    height: auto;
+    text-align:center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.insignia_img{
+    width: 80px;
+}
+
+    /* Footer-Seccion Main Footer */
+.secciones_footer_principal{
+    grid-area: footer_contenido;
+    background-color: #9303F8;
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "logos_footer info_contacto menu_footer"
+    ;
+    justify-items: center;
+}
+
+.footer_pricipal_imagenes{
+    width: 34%;
+    grid-area: logos_footer;
+}
+
+.imagenes_footer{
+    display: block;
+    width: 150px;
+    margin: 20px 0px;
+}
+
+.footer_contact{
+    grid-area: info_contacto;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    text-align: center;
+}
+.contact_info{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 10px 0;
+}
+
+.icon{
+    margin-bottom: 10px;
+}
+
+.nav_footer{
+    grid-area: menu_footer;
+}
+
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.menu_footer_item{
+    list-style: none;
+    padding: 5px;
+}
+
+.footer_item_link{
+    text-decoration: none;
+    color: #fff;
+}
+
+    /* Footer-Seccion Footer Final */
+.final_footer{
+    grid-area: footer_final;
+    /* height: auto; */
+    color: #fff;
+    background-color: #000000;
+}
+
+.final_footer .link_final{
+    color: #fff;
+}
+
+.text_copyright {
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* Breake Point 1200px (Tablet Grande o Notebook)*/
+
+@media (max-width:1200px) {
+    .nav_list{
+        display: none;
+    }
+
+    .nav_menu{
+        display: block;
+    }
+
+    /* Ocultamiento del sidebar de rrss*/
+    .rrss_sidearea{
+        display: none;
+        transition: .5s;
+    }
+
+    /* Cambio de tamaño del titulo */
+    .hero_titulo{
+        color: #fff;
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        transition: .5s;
+    }
+
+    /* Cambio de grid de las tecnologias */
+    .primera_fila_tecnologias{
+        grid-area: primera_fila;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px,1fr));
+        gap: 1em;
+    }
+
+    .segunda_fila_tecnologias{
+        grid-area: segunda_fila;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px,1fr));
+        gap: 1em;
+    }
+
+    .grid_diferencias{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(3,1fr); */
+        grid-template-areas: 
+        "primera_diferencia segunda_diferencia"
+        "tercera_diferencia tercera_diferencia"
+        ;
+        align-items: center;
+    }
+    
+}
+
+
+/* Breake Point 700px (Tablets pequeñas)*/
+
+@media (max-width:700px) {
+
+    /* Cambio de tamaño del titulo */
+    .hero_titulo{
+        color: #fff;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        transition: .5s;
+    }
+    
+    /* Cambio de grid de las tecnologias */
+
+    .grid_diferencias{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(1,1fr);
+        /* grid-template-rows: repeat(3,1fr); */
+        grid-template-areas: 
+        "primera_diferencia"
+        "segunda_diferencia"
+        "tercera_diferencia"
+        ;
+        align-items: center;
+    }
+
+    .grilla_clientes{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: .5fr;
+        justify-items: center;
+    }
+    .nav_footer{
+        display: none;
+    }
+
+    .secciones_footer_principal{
+        grid-area: footer_contenido;
+        background-color: #9303F8;
+        padding: 30px 0px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "logos_footer info_contacto"
+        ;
+        justify-items: center;
+    }
+    
+}
+
+/* * Breake Point 450px (Celulares) */
+
+@media (max-width:450px) {
+    .header{
+        width:100%;
+        height: 60vh;
+    }
+
+    .img_hero{
+        height: 60%;
+    }
+    
+    .background_black{
+        height: 60%;
+    }
+
+
+    .grid_tecnologias{
+        grid-template-columns: 1fr;
+    }
+    
+    .titulo{
+        font-size: 1.5em;
+    }
+    
+    .primera_fila_tecnologias{
+        grid-template-columns: 1fr;
+    }
+    
+    .segunda_fila_tecnologias{
+        grid-template-columns: 1fr;
+    }
+
+    .secciones_footer_principal{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        grid-template-areas: 
+        "logos_footer"
+        "info_contacto"
+        ;
+    }
+    .titulo--nuestrosclientes{
+        color: #fff;
+        font-size: 1.5em;
+    }
+    .grilla_clientes{
+        display: grid;
+        gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,100px);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer_contact{
+        grid-area: info_contacto;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .contact_info{
+        text-decoration: none;
+        color: #fff;
+        font-family: sans-serif;
+        padding: 10px 30px;
+    }
+}
