@@ -779,8 +779,7 @@ body{
         grid-template-areas: 
         "primera_diferencia"
         "segunda_diferencia"
-        "tercera_diferencia"
-        ;
+        "tercera_diferencia";
         align-items: center;
     }
 
@@ -884,14 +883,13 @@ body{
         grid-area: info_contacto;
         display: flex;
         flex-direction: column;
-        padding: 0px;
     }
 
     .contact_info{
         text-decoration: none;
         color: #fff;
         font-family: sans-serif;
-        padding: 10px 30px;
     }
+
 
 }
