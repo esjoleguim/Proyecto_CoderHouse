@@ -15,6 +15,12 @@
         <!-- Navegador del sitio-->
         <nav class="header_nav container">
             <a href="../index.html"><img class="nav_logo" src="../assets/logo-2.png" alt="Este es logo de la empresa"></a>
+            
+            <label for="menu" class="menu_label">
+                <figure class="nav_menu"><img src="./assets/icon_menu.svg" alt="Icono de menu" class="nav_icon"></figure>
+            </label>
+            <input type="checkbox" id="menu" class="menu_input">
+
                 <ul class="nav_list">
                     <li class="nav_item"><a href="#" class="nav_link">Inicio</a></li>
                     <li class="nav_item"><a href="./pages/tecnologias-servicios.html" class="nav_link">Tecnologías y Servicios</a></li>
@@ -22,17 +28,17 @@
                     <li class="nav_item"><a href="./pages/nosotros.html" class="nav_link">Nosotros</a></li>
                     <li class="nav_item"><a href="./pages/contacto.html" class="nav_link nav_link--contacto">Contáctanos</a></li>
                 </ul>
-                <figure class="nav_menu"><img src="./assets/icon_menu.svg" alt="Icono de menu" class="nav_icon"></figure>
+                
         </nav>
         <!-- Seccion Contenido del Hero -->
         <section class="hero_content container">
             <div class="hero_texts">
-                <h1 class="hero_titulo">Lorem ipsum dolor sit amet.<span class="hero_titulo--textocolor">Lorem ipsum dolor sit amet.</span> Lorem, ipsum.</h1>
+                <h1 class="hero_titulo">Avancemos juntos hacia la <span class="hero_titulo--textocolor">transformación digital</span> de tu organización</h1>
                 <p class="hero_subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, magnam?</p>
             </div>
         </section>
-
-        <!-- Background del Hero -->
+    
+            <!-- Background del Hero -->
         <figure class="hero_image">
             <img src="./assets/hero-index.jpg" alt="" class="img_hero">
             <div class="background_black"></div>
@@ -42,24 +48,25 @@
             <div class="rrss_sidearea">
                 <div class="rrss_caja">
                     <a href="#" target="_blank" class="rrss_link">
-                        <box-icon name='facebook' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
+                        <i class="fa-brands fa-facebook-f icon_rrss"></i>
                     </a>
                 </div>
                 <div class="rrss_caja">
                     <a href="#" target="_blank" class="rrss_link">
-                        <box-icon name='instagram' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
+                        <i class="fa-brands fa-instagram"></i>    
                     </a>
                 </div>
     
                 <div class="rrss_caja">
                     <a href="#" target="_blank" class="rrss_link">
-                        <box-icon name='linkedin' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
 
     </header>
     <main class="main">  
+
         <section class="contenido_principal">
             <!-- Seccion de Tecnologias Microsoft -->
             <section class="tecnologias_microsoft container">
@@ -178,6 +185,7 @@
                 </div>
             </section>
         </section>
+        
     </main>
 
     <footer class="footer">

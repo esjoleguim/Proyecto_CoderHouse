@@ -15,7 +15,13 @@
     <header class="header">
         <!-- Navegador del sitio-->
         <nav class="header_nav container">
+
             <a href="../index.html"><img class="nav_logo" src="../assets/logo-2.png" alt="Este es logo de la empresa"></a>
+            <label for="menu" class="menu_label">
+                <figure class="nav_menu"><img src="../assets/icon_menu.svg" alt="Icono de menu" class="nav_icon"></figure>
+            </label>
+            <input type="checkbox" id="menu" class="menu_input">
+
                 <ul class="nav_list">
                     <li class="nav_item"><a href="../index.html" class="nav_link">Inicio</a></li>
                     <li class="nav_item"><a href="../pages/tecnologias-servicios.html" class="nav_link">Tecnologías y Servicios</a></li>
@@ -23,13 +29,12 @@
                     <li class="nav_item"><a href="../pages/nosotros.html" class="nav_link">Nosotros</a></li>
                     <li class="nav_item"><a href="#" class="nav_link nav_link--contacto">Contáctanos</a></li>
                 </ul>
-                <figure class="nav_menu"><img src="../assets/icon_menu.svg" alt="Icono de menu" class="nav_icon"></figure>
         </nav>
         <!-- Seccion Contenido del Hero -->
         <section class="hero_content container">
             <div class="hero_texts">
-                <h1 class="hero_titulo">Lorem ipsum dolor sit amet.<span class="hero_titulo--textocolor">Lorem ipsum dolor sit amet.</span> Lorem, ipsum.</h1>
-                <p class="hero_subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, magnam?</p>
+                <h1 class="hero_titulo">Podemos ayudarte</h1>
+                <p class="hero_subtitulo">Estaremos felices de asesorarte, coordina una llamada con uno de nuestros expertos a continuación:</p>
             </div>
         </section>
 
@@ -40,24 +45,24 @@
         </figure>
 
         <!-- Sidebar de redes sociales -->
-            <div class="rrss_sidearea">
-                <div class="rrss_caja">
-                    <a href="#" target="_blank" class="rrss_link">
-                        <box-icon name='facebook' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
-                    </a>
-                </div>
-                <div class="rrss_caja">
-                    <a href="#" target="_blank" class="rrss_link">
-                        <box-icon name='instagram' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
-                    </a>
-                </div>
-    
-                <div class="rrss_caja">
-                    <a href="#" target="_blank" class="rrss_link">
-                        <box-icon name='linkedin' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
-                    </a>
-                </div>
+        <div class="rrss_sidearea">
+            <div class="rrss_caja">
+                <a href="#" target="_blank" class="rrss_link">
+                    <i class="fa-brands fa-facebook-f icon_rrss"></i>
+                </a>
             </div>
+            <div class="rrss_caja">
+                <a href="#" target="_blank" class="rrss_link">
+                    <i class="fa-brands fa-instagram"></i>    
+                </a>
+            </div>
+
+            <div class="rrss_caja">
+                <a href="#" target="_blank" class="rrss_link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
 
     </header>
     
@@ -65,19 +70,34 @@
         <section class="contenido_contactanos container">
             <section class="contactanos">
                 <h3 class="titulo">Hablemos</h3>
-                <p class="descripcion_formulario">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, expedita!</p>
-                <div class="whatsapp_contact">
-                    <i class="icon_wa"></i>
-                    <p class="tel_info">+56932073359</p>
-                </div>
-                <div class="email_contact">
-                    <i class="icon_email"></i>
-                    <p class="email_info">contact@bizapps.cl</p>
-                </div>
-                <div class="ubicacion">
-                    <i class="icon_ubicacion"></i>
-                    <p class="ubicacion_info">Av. Alvarez de toledo, San Miguel</p>
-                </div>
+                <p class="descripcion_formulario">Estamos totalmente dispuestos a ayudarte</p>
+                
+                <div class="contacto_informacion">
+                    <div class="contact_row">
+                        <i class="fa-brands fa-whatsapp icon--contact"></i>
+                        <div class="informacion">
+                            <h4 class="titulo_contact">WhatsApp</h4>
+                            <p class="tel_info">+56932073359</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact_row">
+                        <i class="fa-regular fa-envelope icon--contact"></i>
+                        <div class="informacion">
+                            <h4 class="titulo_contact">Email</h4>
+                            <p class="email_info">contact@bizapps.cl</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact_row">
+                        <i class="fa-solid fa-location-dot icon--contact"></i>
+                        <div class="informacion">
+                            <h4 class="titulo_contact">Dirección</h4>
+                            <p class="ubicacion_info">Av. Alvarez de toledo, San Miguel</p>
+                        </div>
+                    </div>
+            </div>
+
             </section>
             <section class="formulario_contacto">
                 <h3 class="titulo_form">Formulario de Contacto</h3>

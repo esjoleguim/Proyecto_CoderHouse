@@ -15,6 +15,12 @@
         <!-- Navegador del sitio-->
         <nav class="header_nav container">
             <a href="../index.html"><img class="nav_logo" src="../assets/logo-2.png" alt="Este es logo de la empresa"></a>
+            
+            <label for="menu" class="menu_label">
+                <figure class="nav_menu"><img src="../assets/icon_menu.svg" alt="Icono de menu" class="nav_icon"></figure>
+            </label>
+            <input type="checkbox" id="menu" class="menu_input">
+
                 <ul class="nav_list">
                     <li class="nav_item"><a href="../index.html" class="nav_link">Inicio</a></li>
                     <li class="nav_item"><a href="../pages/tecnologias-servicios.html" class="nav_link">Tecnologías y Servicios</a></li>
@@ -22,13 +28,12 @@
                     <li class="nav_item"><a href="#" class="nav_link">Nosotros</a></li>
                     <li class="nav_item"><a href="../pages/contacto.html" class="nav_link nav_link--contacto">Contáctanos</a></li>
                 </ul>
-                <figure class="nav_menu"><img src="../assets/icon_menu.svg" alt="Icono de menu" class="nav_icon"></figure>
         </nav>
         <!-- Seccion Contenido del Hero -->
         <section class="hero_content container">
             <div class="hero_texts">
-                <h1 class="hero_titulo">Lorem ipsum dolor sit amet.<span class="hero_titulo--textocolor">Lorem ipsum dolor sit amet.</span> Lorem, ipsum.</h1>
-                <p class="hero_subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, magnam?</p>
+                <h1 class="hero_titulo">Somos un equipo de expertos certificados y enfocados en la <span class="hero_titulo--textocolor">transformación digital</span></h1>
+                <p class="hero_subtitulo">Diseñamos soluciones simples y ágiles, para satisfacer tu necesidad y las del mercado.</p>
             </div>
         </section>
 
@@ -39,61 +44,98 @@
         </figure>
 
         <!-- Sidebar de redes sociales -->
-            <div class="rrss_sidearea">
-                <div class="rrss_caja">
-                    <a href="#" target="_blank" class="rrss_link">
-                        <box-icon name='facebook' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
-                    </a>
-                </div>
-                <div class="rrss_caja">
-                    <a href="#" target="_blank" class="rrss_link">
-                        <box-icon name='instagram' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
-                    </a>
-                </div>
-    
-                <div class="rrss_caja">
-                    <a href="#" target="_blank" class="rrss_link">
-                        <box-icon name='linkedin' type='logo' color='#ffffff' class="icon_rrss"></box-icon>
-                    </a>
-                </div>
+        <div class="rrss_sidearea">
+            <div class="rrss_caja">
+                <a href="#" target="_blank" class="rrss_link">
+                    <i class="fa-brands fa-facebook-f icon_rrss"></i>
+                </a>
             </div>
+            <div class="rrss_caja">
+                <a href="#" target="_blank" class="rrss_link">
+                    <i class="fa-brands fa-instagram"></i>    
+                </a>
+            </div>
+
+            <div class="rrss_caja">
+                <a href="#" target="_blank" class="rrss_link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
 
     </header>
 
     <main class="main">
-        <section class="descripcion_empresa container">
-            <img src="../assets/logo-1.png" alt="" class="logo_empresa">
+            <!-- Sección de Misión y Vision de la empresa -->
+        <section class="contenido_nosotros container">
             <h4 class="subtitulo_pricipal">Especialistas de Soluciones</h4>
-            <p class="descripcion_empresa_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime necessitatibus non modi eos in ab? Ab sit magnam ducimus minus.</p>
-            <img src="../assets/descripcion_empresa_img.jpeg" alt="" class="descripcion_empresa_hero">
-        </section>
-
-        <secction class="mision_vision container">
-
-        </secction>
-
-        <section class="nuestro_equipo container">
-            <h3 class="titulo">Nuestro Equipo BizApps</h3>
-            <div class="equipo_content">
-                <div class="persona_content">
-                    <h4 class="name_persona">Amelia Fernandez</h4>
-                    <figure class="presentacion_persona">
-                        <img src="../assets/persona_1.jpg" alt="" class="foto_persona">
-                    </figure>
+            <section class="descripcion_empresa">
+                <div class="texto_descripcion">
+                    <p class="descripcion_empresa_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime necessitatibus non modi eos in ab? Ab sit magnam ducimus minus.</p>
                 </div>
-                <div class="persona_content">
-                    <h4 class="name_persona">José Nuñez</h4>
-                    <figure class="presentacion_persona">
-                        <img src="../assets/persona_2.jpg" alt="" class="foto_persona">
-                    </figure>
+                <div class="imagen_empresa">
+                    <img src="../assets/img_nosotros.svg" alt="" class="descripcion_empresa_hero">
                 </div>
-                <div class="persona_content">
-                    <h4 class="name_persona">Carmen Perez</h4>
-                    <figure class="presentacion_persona">
-                        <img src="../assets/persona_3.jpg" alt="" class="foto_persona">
-                    </figure>
+            </section>
+
+            <!-- Sección de Misión y Vision de la empresa -->
+            <secction class="mision_vision">
+
+            </secction>
+
+            <!-- Sección de Miembros del equipo -->
+            <section class="nuestro_equipo">
+                <h3 class="titulo">Nuestro Equipo BizApps</h3>
+
+                <div class="equipo_content">
+
+                    <div class="persona_content_card">
+                        <div class="head">
+                            <div class="circulo"></div>
+                            <figure class="foto_persona">
+                                <img src="../assets/persona_1.jpg" alt="" class="img_persona">
+                            </figure>
+                        </div>
+                        <div class="descripcion_persona">
+                            <h3 class="name_persona">Amelia Fernandez</h3>
+                            <h4 class="titulo_profesion">Consultor Funcional</h4>
+                            <p class="descripcion_cargo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, sequi.</p>
+                        </div>
+                        <button class="btn_contactar"><a href="#">Contactar</a></button>
+                    </div>
+
+                    <div class="persona_content_card">
+                        <div class="head">
+                            <div class="circulo"></div>
+                            <figure class="foto_persona">
+                                <img src="../assets/persona_2.jpg" alt="" class="img_persona">
+                            </figure>
+                        </div>
+                        <div class="descripcion_persona">
+                            <h3 class="name_persona">José Nuñez</h3>
+                            <h4 class="titulo_profesion">Arquitecto Dynamics 365</h4>
+                            <p class="descripcion_cargo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, sequi.</p>
+                        </div>
+                        <button class="btn_contactar"><a href="#">Contactar</a></button>
+                    </div>
+
+                    <div class="persona_content_card">
+                        <div class="head">
+                            <div class="circulo"></div>
+                            <figure class="foto_persona">
+                                <img src="../assets/persona_3.jpg" alt="" class="img_persona">
+                            </figure>
+                        </div>
+                        <div class="descripcion_persona">
+                            <h3 class="name_persona">Carmen Perez</h3>
+                            <h4 class="titulo_profesion">Ingeniero de Sistemas</h4>
+                            <p class="descripcion_cargo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, sequi.</p>
+                        </div>
+                        <button class="btn_contactar"><a href="#">Contactar</a></button>
+                    </div>
+
                 </div>
-            </div>
+            </section>
         </section>
     </main> 
     
