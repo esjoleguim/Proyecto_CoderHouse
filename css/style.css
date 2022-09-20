@@ -377,21 +377,31 @@ body{
     "nuestra_vision"
     "nuestro_equipo";
 }
+.empresa{
+    grid-area: descripcion_empresa;
+}
 
 .descripcion_empresa{
-    grid-area: descripcion_empresa;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
-    "Texto_empresa descripcion_empresa_hero";
+    "Texto_empresa imagen_empresa";
     align-items: center;
     justify-content: center;
     justify-items: center;
     margin: 30px;
 }
+.texto_descripcion{
+    grid-area: Texto_empresa;
+    font-size: 19px;
+}
 
 .descripcion_empresa_hero{
+    grid-area: imagen_empresa;
     width: 500px;
+}
+.mision_vision{
+    grid-area: nuestra_vision ;
 }
 
 .nuestro_equipo{
@@ -421,7 +431,6 @@ body{
 .persona_content_card:hover{
     box-shadow: 0 5px 15px #DE39B2;
     transform: translateY(-15px);
-
 }
 
 .persona_content_card .head{
