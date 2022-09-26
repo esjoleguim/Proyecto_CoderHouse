@@ -230,6 +230,19 @@ body{
     gap: 1em;
 }
 
+.tecnologias_microsoft_item{
+    padding: 3em;
+    box-shadow: 0 0 32px -16px rgba(0, 0, 0, 0.301);
+    transition: .5s;
+}
+
+.tecnologias_microsoft_item:hover{
+    box-shadow: 0 5px 15px #DE39B2;
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+
 .item_content{
     display: flex;
     flex-direction: column;
@@ -287,6 +300,7 @@ body{
 .tercera_diferencia{
     grid-area: tercera_diferencia;
 }
+
 .diferencia_content{
     display: flex;
     flex-direction: column;
@@ -362,10 +376,195 @@ body{
     overflow: hidden;
 }
 
-/* Página Casos de éxito */
-.imagen_caso_exito{
-    width: 100px;
+/* Pagina Tech y Serv */
+
+.contenido_tech_y_serv{
+    display: grid;
+    grid-template-rows: repeat(2,max-content);
+    grid-template-areas:
+    "lineas_tech"
+    "servicios"
+    ;
 }
+
+.lineas_tecnologicas{
+    grid-area: lineas_tech;
+    display:grid;
+    grid-template-rows: repeat(2,max-content);
+}
+
+.lineas_tech_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px;
+}
+
+.linea{
+    border: solid 1px black;
+    display: flex;
+    padding: 30px;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgb(181, 181, 181);
+    overflow: hidden;
+}
+
+.img_tech{
+    /* width: 300px;
+    height: 450px; */
+    border-radius: 10px;
+    margin: 15px;
+    background-size:cover;
+    max-width: 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+.linea .descripcion_linea_tech{
+    text-align: justify;
+}
+
+.btn_linea{
+    margin: 15px 0;
+    width: 75px;
+    height: 40px;
+    background-color: #DE39B2;
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.servicios{
+    grid-area: servicios;
+    display:grid;
+    grid-template-rows: repeat(2,max-content);
+}
+
+.lineas_serv_content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px;
+}
+
+.servicios_item{
+    padding: 30px;
+}
+
+.item_content_servicio{
+    border: solid 1px #dcdcdc;
+    border-radius: 10px;
+    padding: 50px 0;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item_content_servicio:hover{
+    box-shadow: 0 0 32px -16px rgba(0, 0, 0, 0.301);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.icon--servicios{
+    width: 100px;
+    padding: 15px;
+}
+
+.icon_go{
+    color: #1A1A1A;
+    font-size: 30px;
+    visibility: hidden;
+    margin: 20px 0 0 0;
+}
+
+.item_content_servicio:hover > .icon_go{
+    visibility: visible;
+    transition: .5s;
+    color: #cb219e;
+    transform: translateY(-10px);
+}
+
+/* Página Casos de éxito */
+.casos_exito_contenido{
+    display: grid;
+    grid-template-rows: repeat(2,max-content);
+    grid-template-areas: 
+    "CasoUno"
+    "CasoDos";
+    gap: 1em;
+    padding: 30px;
+}
+
+.primer_caso_exito{
+    grid-area: CasoUno;
+}
+
+.segundo_caso_exito{
+    grid-area: CasoDos;
+}
+
+.imagen_caso_exito{
+    padding: 15px;
+    margin: auto;
+}
+
+.img_caso_exito{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.caso{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 30px;
+    box-shadow: 0 0 32px -16px rgba(0, 0, 0, 0.301);
+    transition: .5s;
+    grid-template-areas: "contenido_caso imagen";
+}
+
+.primer_caso_content{
+    grid-area: contenido_caso;
+}
+
+.segundo_caso_content{
+    grid-area: contenido_caso;
+}
+
+.imagen_caso_exito{
+    grid-area: imagen;
+}
+
+.caso:hover{
+    box-shadow: 0 5px 15px #DE39B2;
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+.subtitulo{
+    font-size: 25px;
+    padding: 10px;
+    font-family: "Inter";
+}
+
+.descripcion_caso{
+    font-size: 19px;
+    text-align: justify;
+    color:#696969;
+}
+
+.subtitulo--derecha{
+    font-size: 25px;
+    text-align: right;
+    padding: 10px;
+}
+
+
 
 /* Pagina Nosotros */
 
@@ -746,7 +945,6 @@ body{
         display: grid;
         gap: 1em;
         grid-template-columns: repeat(2,1fr);
-        /* grid-template-rows: repeat(3,1fr); */
         grid-template-areas: 
         "primera_diferencia segunda_diferencia"
         "tercera_diferencia tercera_diferencia"
@@ -823,6 +1021,18 @@ body{
     .persona_content_card{
         margin: 10px;
     }
+
+    /* Modificacion de pagina Casos de Exito */
+
+    .caso{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px;
+        grid-template-areas: 
+        "imagen"
+        "contenido_caso"
+        ;
+    }
 }
 
 /* * Breake Point 450px (Celulares) */
@@ -891,5 +1101,11 @@ body{
         font-family: sans-serif;
     }
 
+    /* modificacion  */
+
+    .img_caso_exito{
+        width: 150px;
+        border-radius: 10px;
+    }
 
 }
