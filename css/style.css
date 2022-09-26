@@ -313,6 +313,7 @@ body{
 
 .titulo_diferencia{
     text-align: center;
+    margin: 15px;
 }
 
 .descripcion_diferencia{
@@ -400,7 +401,8 @@ body{
 }
 
 .linea{
-    border: solid 1px black;
+    border: solid 1px #dcdcdc;
+    border-radius: 10px;
     display: flex;
     padding: 30px;
     margin: 15px;
@@ -411,12 +413,10 @@ body{
 }
 
 .img_tech{
-    /* width: 300px;
-    height: 450px; */
+    width: 100px;
     border-radius: 10px;
     margin: 15px;
     background-size:cover;
-    max-width: 900px;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
